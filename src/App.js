@@ -1,6 +1,10 @@
+import { CurrentUserLoader } from "./CurrentUserLoader";
+import { UserInfo } from "./UserInfo";
 function App() {
   return (
-    <p>code here</p>
+    <CurrentUserLoader>
+        <UserInfo />
+    </CurrentUserLoader>
   );
 }
 
