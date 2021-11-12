@@ -1,6 +1,11 @@
+import { printProps } from "./printProps";
+import { UserInfo } from "./UserInfo";
+
+const UserInfoWrapped = printProps(UserInfo);
+
 function App() {
   return (
-    <p>code here</p>
+    <UserInfoWrapped a={1} b="Hello" c={{name:"Jacob"}} />
   );
 }
 
