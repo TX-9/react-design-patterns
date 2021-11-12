@@ -1,6 +1,20 @@
+import { useState } from "react";
+import { ControlledModal } from "./ControlledModal";
 function App() {
+  const [shouldShowModal, setShouldShowModal] = useState(false);
+
   return (
-    <p>code here</p>
+    <>
+    <ControlledModal 
+      shouldShow={shouldShowModal}
+      onRequestClose={()=>setShouldShowModal(false)}
+      >
+        <p1>Hello!!</p1>
+    </ControlledModal>
+    <button onClick={()=>setShouldShowModal(!shouldShowModal)}>
+      {shouldShowModal ? "Hide" : "Show"}
+    </button>
+    </>
   );
 }
 
