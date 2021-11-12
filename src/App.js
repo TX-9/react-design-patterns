@@ -1,6 +1,8 @@
+import { UncontrolledForm } from "./UncontrolledForm";
+
 function App() {
   return (
-    <p>code here</p>
+    <UncontrolledForm />
   );
 }
 
